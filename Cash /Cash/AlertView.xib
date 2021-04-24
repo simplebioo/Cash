@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AlertView" customModule="Cash" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="633" height="838"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Pr2-Jh-6Ga">
+                    <rect key="frame" x="277" y="290" width="135" height="205"/>
+                    <color key="backgroundColor" red="0.99991267920000004" green="1" blue="0.99988144639999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="205" id="BPu-0E-B0s"/>
+                        <constraint firstAttribute="width" constant="135" id="bkx-dZ-MEw"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kisspng-money-bag-clip-art-walking-man-holding-purse-5a7bea8d8e03a9.7816948815180704135817" translatesAutoresizingMaskIntoConstraints="NO" id="UHO-t1-4hY" userLabel="bag">
+                    <rect key="frame" x="98" y="142" width="437" height="554"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="554" id="Noi-8D-cfF"/>
+                        <constraint firstAttribute="width" constant="437" id="a8q-YG-MGM"/>
+                    </constraints>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="ZmY-4E-FpQ">
+                    <rect key="frame" x="258" y="342" width="277" height="179"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="BIp-qg-FzT">
+                            <rect key="frame" x="0.0" y="0.0" width="150" height="76"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Сумма" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tvp-Ui-MF6">
+                                    <rect key="frame" x="0.0" y="0.0" width="150" height="34"/>
+                                    <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="150" id="Jge-Ul-CTy"/>
+                                        <constraint firstAttribute="height" constant="34" id="LLb-yI-lmm"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" textContentType="tel"/>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Комментарий" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y1G-81-Pjl">
+                                    <rect key="frame" x="0.0" y="42" width="150" height="34"/>
+                                    <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="y1G-81-Pjl" firstAttribute="width" secondItem="tvp-Ui-MF6" secondAttribute="width" id="Ef2-tH-DEh"/>
+                                <constraint firstItem="y1G-81-Pjl" firstAttribute="height" secondItem="tvp-Ui-MF6" secondAttribute="height" id="jLL-Yx-0WQ"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Mpq-t9-iII">
+                            <rect key="frame" x="0.0" y="136" width="158" height="43"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZI9-zF-8b9" customClass="AlertButton" customModule="Cash" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="69" height="43"/>
+                                    <color key="backgroundColor" red="0.223628247" green="0.74365482230000002" blue="0.53397286450000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="43" id="3DQ-Ku-M1I"/>
+                                        <constraint firstAttribute="width" constant="69" id="xgU-8B-ADb"/>
+                                    </constraints>
+                                    <state key="normal" title="Юххху!">
+                                        <color key="titleColor" red="0.99991267920000004" green="1" blue="0.99988144639999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="ammAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="vFE-bk-QRf"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nMt-cm-X7i" customClass="AlertButton" customModule="Cash" customModuleProvider="target">
+                                    <rect key="frame" x="89" y="0.0" width="69" height="43"/>
+                                    <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                    <state key="normal" title="Трынь!">
+                                        <color key="titleColor" red="0.99991267920000004" green="1" blue="0.99988144639999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="trinAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="4Ug-zd-wWu"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="nMt-cm-X7i" firstAttribute="height" secondItem="ZI9-zF-8b9" secondAttribute="height" id="29g-f3-ydg"/>
+                                <constraint firstItem="nMt-cm-X7i" firstAttribute="width" secondItem="ZI9-zF-8b9" secondAttribute="width" id="b0e-x2-IVb"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Pr2-Jh-6Ga" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="290" id="2RQ-bC-J8R"/>
+                <constraint firstItem="UHO-t1-4hY" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="4bQ-dX-paO"/>
+                <constraint firstItem="ZmY-4E-FpQ" firstAttribute="trailing" secondItem="UHO-t1-4hY" secondAttribute="trailing" id="LEg-vC-unL"/>
+                <constraint firstItem="UHO-t1-4hY" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="Mnl-OC-dgT"/>
+                <constraint firstItem="ZmY-4E-FpQ" firstAttribute="leading" secondItem="UHO-t1-4hY" secondAttribute="leading" constant="160" id="bL5-gg-qVM"/>
+                <constraint firstItem="ZmY-4E-FpQ" firstAttribute="top" secondItem="UHO-t1-4hY" secondAttribute="top" constant="200" id="fzR-9P-ik6"/>
+                <constraint firstItem="Pr2-Jh-6Ga" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="277" id="kSr-1w-ZPo"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Pr2-Jh-6Ga" secondAttribute="trailing" constant="221" id="pZJ-WX-1eu"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="ammButton" destination="ZI9-zF-8b9" id="zHg-s8-IhS"/>
+                <outlet property="comTextField" destination="y1G-81-Pjl" id="gJR-Ew-9AN"/>
+                <outlet property="summTextField" destination="tvp-Ui-MF6" id="7Wg-Zr-58m"/>
+                <outlet property="trinButton" destination="nMt-cm-X7i" id="A9t-TB-kpo"/>
+            </connections>
+            <point key="canvasLocation" x="308" y="-405.69715142428788"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="kisspng-money-bag-clip-art-walking-man-holding-purse-5a7bea8d8e03a9.7816948815180704135817" width="954" height="1225.5"/>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiarySystemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
